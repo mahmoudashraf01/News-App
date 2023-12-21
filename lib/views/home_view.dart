@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:whether_api/themes/colors.dart';
 import 'package:whether_api/themes/text.dart';
 import 'package:whether_api/widgets/categories_list_view.dart';
+import 'package:whether_api/widgets/list_view_builder.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -29,7 +30,16 @@ class HomeView extends StatelessWidget {
         ),
         backgroundColor: Colors.transparent,
       ),
-      body: const CategoriesListView(),
+      body: const Padding(
+        padding: EdgeInsets.symmetric(horizontal: 10),
+        child: CustomScrollView(
+          physics: BouncingScrollPhysics(),
+          slivers: [
+            SliverToBoxAdapter(child: CategoriesListView()),
+            NewsListViewBuilder(),
+          ],
+        ),
+      ),
     );
   }
 }
