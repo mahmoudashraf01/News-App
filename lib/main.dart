@@ -4,7 +4,7 @@ import 'package:whether_api/services/news_service.dart';
 import 'package:whether_api/views/home_view.dart';
 
 void main() {
-  NewsService(dio: Dio()).getNews();
+  NewsService(dio: Dio(), newsType: 'general').getNews();
   runApp(const MyApp());
 }
 

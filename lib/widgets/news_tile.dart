@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:whether_api/models/article_model.dart';
 import 'package:whether_api/themes/colors.dart';
@@ -14,17 +15,21 @@ class NewsTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String image =
-        'https://images.pexels.com/photos/5981703/pexels-photo-5981703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+        'https://images.unsplash.com/photo-1586339949216-35c2747cc36d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(6),
-          child: Image.network(
-            article.image ?? image,
+          child: CachedNetworkImage(
+            imageUrl: article.image ?? image,
+            placeholder: (context, url) => const CircularProgressIndicator(
+              value: CircularProgressIndicator.strokeAlignCenter,
+            ),
+            errorWidget: (context, url, error) => const Icon(Icons.error),
             height: 200,
             width: double.infinity,
-            fit: BoxFit.cover,
+            fit: BoxFit.cover, // Adjust this based on your needs
           ),
         ),
         const SizedBox(
