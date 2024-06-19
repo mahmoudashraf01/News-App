@@ -1,4 +1,4 @@
-# whether_api
+# NewsApp
 
 A new Flutter project.
 
