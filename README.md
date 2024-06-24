@@ -23,5 +23,5 @@ samples, guidance on mobile development, and a full API reference.
 
 <div>  
   <h3>These Page When You Choose News Type</h3>
-  ![Screenshot 2024-06-19 130103](https://github.com/mahmoudashraf01/News-App/assets/126792022/ac0c8d06-d297-4865-8e01-07bec92ee249)
+  <img src="https://github.com/mahmoudashraf01/News-App/assets/126792022/ac0c8d06-d297-4865-8e01-07bec92ee249" alt="Selected News Type Page">
 </div>  
