@@ -21,6 +21,8 @@ samples, guidance on mobile development, and a full API reference.
   <img src="https://github.com/mahmoudashraf01/News-App/assets/126792022/9aa58db7-1be2-414b-99af-724ee44b2621" alt="General News Page">
 </div>
 
+<br><br>
+
 <div>  
   <h3>These Page When You Choose News Type</h3>
   <img src="https://github.com/mahmoudashraf01/News-App/assets/126792022/ac0c8d06-d297-4865-8e01-07bec92ee249" alt="Selected News Type Page">
