@@ -17,7 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 
 <div>
   <h3>This are General News</h3>
-  ![Screenshot 2024-06-19 130003]()
+  
   <img src="[https://github.com/mahmoudashraf01/News-App/assets/126792022/9aa58db7-1be2-414b-99af-724ee44b2621]" alt="[General News Page]">
 </div>
 
